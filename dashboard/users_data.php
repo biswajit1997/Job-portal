@@ -1,9 +1,6 @@
 <?php
 $sql = "SELECT * FROM `users` WHERE `role` = 'user' ";
 $result = $mysqli->query($sql);
-// $row = $result->fetch_assoc();
-// print_r($row);
-
 ?>
 
 <div class="card shadow mb-4">
@@ -32,7 +29,9 @@ $result = $mysqli->query($sql);
                         <td><?php echo $row["email"] ?></td>
                         <td><?php echo $row["mobile"] ?></td>
                         <td><?php echo $row["dob"] ?></td>
-                        <td><?php echo $row["resume"] ?></td>
+                        <td><a href="../uploads/<?php echo $row["resume"]?>"  download><?php echo $row["resume"] ?></a></td>
+                      
+                        <!-- <a href="./directory/yourfile.pdf" download>Download the pdf</a> -->
                     </tr>
                <?php
                      }

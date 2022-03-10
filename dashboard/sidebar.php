@@ -49,9 +49,18 @@ if($_SESSION["role"] == 'user'){
 ?>
 <li class="nav-item">
     <a class="nav-link collapsed" href="index.php" >
-        <span>Users</span>
+        <span>Registration Users</span>
     </a>
-   
+</li>
+<li class="nav-item">
+    <a class="nav-link collapsed" href="index.php" >
+        <span>Apply Job Users</span>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link collapsed" href="jobs.php" >
+        <span>Jobs List</span>
+    </a>
 </li>
 <?php
 }
